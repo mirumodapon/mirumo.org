@@ -8,7 +8,25 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="zh-TW">
-      <body>{children}</body>
+      <body>
+        <template
+          dangerouslySetInnerHTML={{
+            __html: `<!--
+                 _                  _       
+                | |    ᥫ᭡.         | |      
+                | |     _ _ __   __| |_   _ 
+                | |    | | '_ \ / _\` | | | |
+                | |____| | | | | (_| | |_| |
+                |______|_|_| |_|\__,_|\__, |
+                                       __/ |
+                                      |___/ 
+
+                                            ٩(ˊᗜˋ*)و ♡
+      -->`
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
