@@ -26,7 +26,7 @@ export default function Home() {
             height="150"
             alt=""
           />
-          <section className="flex items-center gap-x-3 my-3">
+          <section className="flex items-center gap-x-6 my-3">
             <a href="https://github.com/mirumodapon">
               <svg viewBox="0 0 32 32" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
                 <g data-name="github coding dev developer" id="github_coding_dev_developer">
