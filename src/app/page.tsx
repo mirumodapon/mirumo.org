@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen dark:[&_*]:text-white dark:[&_*]:border-white dark:bg-black [&_svg]:fill-white">
       <div className="w-11/12 md:w-5/6 h-full mx-auto py-5 grid grid-rows-[60px_1fr]">
         <nav className="px-6 border-b-2 border-b-black flex items-center">
           <Link href="/" className="text-2xl font-bold">
