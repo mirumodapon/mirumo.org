@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import 'tailwindcss/tailwind.css';
+import '@/assets/styles/global.css';
 
 interface Props {
   children: Readonly<ReactNode>;
