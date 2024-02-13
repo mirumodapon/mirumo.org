@@ -1,10 +1,15 @@
 import { ReactNode } from 'react';
+import type { Metadata } from 'next';
 import 'tailwindcss/tailwind.css';
 import '@/assets/styles/global.css';
 
 interface Props {
   children: Readonly<ReactNode>;
 }
+
+export const metadata: Metadata = {
+  title: '咪路'
+};
 
 export default function RootLayout({ children }: Props) {
   return (
