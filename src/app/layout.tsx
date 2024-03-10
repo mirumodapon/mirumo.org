@@ -1,9 +1,8 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
 import 'tailwindcss/tailwind.css';
 import '@/assets/styles/global.css';
-
 
 interface Props {
   children: Readonly<ReactNode>;
@@ -18,9 +17,11 @@ export default function RootLayout({ children }: Props) {
     <html lang="zh-TW">
       <head>
         <GoogleAnalytics gaId="G-V4Z00NVGRT" />
-        <script dangerouslySetInnerHTML={{
-          __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "ledccdbfas");`
-        }}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "ledccdbfas");`
+          }}
+        ></script>
       </head>
       <body>
         <template
