@@ -13,9 +13,6 @@ export default function Home() {
             <li>
               <Link href="/about">About</Link>
             </li>
-            <li>
-              <a href="https://mirumo.net">Blog</a>
-            </li>
           </ul>
         </nav>
         <main className="flex flex-col justify-center items-center">
