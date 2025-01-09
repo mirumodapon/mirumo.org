@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: |
-            - recursive: true
-              args: [--frozen-lockfile]
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack install
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build app
         run: pnpm run build
